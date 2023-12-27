@@ -73,13 +73,14 @@ if authentication_status:
             #st.write(workbook) 
 
         else:
-            if state.submit_ra == True:
-                emp, but, empty = st.columns([2.05,1.2,1.5]) 
-                with but:
-                    st.write("###")
-                    with open('kodo_reconciliation.xlsx', 'rb') as my_file:
-                        click = st.download_button(label = 'Download in Excel', data = my_file, file_name = 'kodo_reconciliation.xlsx', 
-                        mime = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
+            pass
+            # if state.submit_ra == True:
+            #     emp, but, empty = st.columns([2.05,1.2,1.5]) 
+            #     with but:
+            #         st.write("###")
+            #         with open('kodo_reconciliation.xlsx', 'rb') as my_file:
+            #             click = st.download_button(label = 'Download in Excel', data = my_file, file_name = 'kodo_reconciliation.xlsx', 
+            #             mime = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet')
         # except:
         #    st.error("Run failed, kindly check if the inputs are valid")
 
