@@ -27,6 +27,7 @@ if authentication_status == False:
         st.error("Username/Password is incorrect")
 
 if authentication_status:
+    print('/////////////////////////////////////////////////////////////')
     #authenticator.logout('Logout', 'sidebar')
     time.sleep(0.1)
     def landing_page():
@@ -73,6 +74,7 @@ if authentication_status:
             #st.write(workbook) 
 
         else:
+            print('************************************')
             if state.submit_ra == True:
                 emp, but, empty = st.columns([2.05,1.2,1.5]) 
                 with but:
